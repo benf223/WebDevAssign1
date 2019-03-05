@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Status Search</title>
+    <meta charset="utf-8">
+    <!--Bootstrap requirements-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Search for a status</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!--Form data being collected for the processing page-->
+                <form action="searchstatusprocess.php" method="get">
+                <div class="form-group">
+                    <label>Text to find: (required)</label>
+                    <input name="to_find" type="text" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" value="View Status" class="btn btn-light">
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="row">
+            <a href="poststatusform.php" class="btn btn-light">Post a new status</a>
+            <a href="/assign1" class="btn btn-light">Return Home</a>
+        </div>
+    </div>
+</body>
+</html>
